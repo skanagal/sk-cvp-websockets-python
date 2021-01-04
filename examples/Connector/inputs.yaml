@@ -1,0 +1,22 @@
+## IP address of YaBGP controller
+yabpg_ip: 172.20.48.143
+
+## IP address of sFlow-RT collector
+sflow_rt_ip: 172.20.48.143
+
+## IP addresses of Arista PE router that connects to YaBGP via BGP-SRTE
+pe1: 172.30.154.65
+
+## IP address of Arista Core router on which sFlow stats are collected
+lsr2: 172.30.154.63
+
+##
+binding_sid: 965700
+
+## Next Hop is the IGP next hop the PE router takes to reach an endpoint reachable via SR Tunnel
+
+next_hop: 10.10.51.1
+
+## "endpoint" is the next-hop IP of the tunnel. Usually this is loopback associated with Node SID or Prefix SID of an SR router.
+
+endpoint: 10.0.0.5
